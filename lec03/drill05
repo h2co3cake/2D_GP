@@ -53,31 +53,85 @@ def move4_5():
         delay(0.01)
 
 def move5_6():
-    pass
+    x5, y5, x6, y6 = 715, 136, 316, 225
+
+    move_x = (x5 - x6) // 10
+    move_y = (y6 - y5) // 10
+    while (x6 <= x5):
+        clear_canvas()
+        character.draw_now(x5, y5)
+        x5 -= move_x
+        y5 += move_y
+        delay(0.01)
 
 def move6_7():
-    pass
+    x6, y6, x7, y7 = 316, 225, 510, 92
+
+    move_x = (x7 - x6) // 10
+    move_y = (y6 - y7) // 10
+    while (x6 <= x7):
+        clear_canvas()
+        character.draw_now(x6, y6)
+        x6 += move_x
+        y6 -= move_y
+        delay(0.01)
 
 def move7_8():
-    pass
+    x7, y7, x8, y8 = 510, 92, 692, 518
+
+    move_x = (x8 - x7) // 10
+    move_y = (y8 - y7) // 10
+    while (x7 <= x8):
+        clear_canvas()
+        character.draw_now(x7, y7)
+        x7 += move_x
+        y7 += move_y
+        delay(0.01)
 
 def move8_9():
-    pass
+    x8, y8, x9, y9 = 692, 518, 682, 336
+
+    move_x = (x8 - x9) // 10
+    move_y = (y8 - y9) // 10
+    while (x9 <= x8):
+        clear_canvas()
+        character.draw_now(x8, y8)
+        x8 -= move_x
+        y8 -= move_y
+        delay(0.01)
 
 def move9_10():
-    pass
+    x9, y9, x10, y10 = 682, 336, 712, 349
+
+    move_x = (x10 - x9) // 10
+    move_y = (y10 - y9) // 10
+    while (x9 <= x10):
+        clear_canvas()
+        character.draw_now(x9, y9)
+        x9 += move_x
+        y9 += move_y
+        delay(0.01)
 
 def move10_1():
-    pass
+    x10, y10, x1, y1 = 712, 349, 203, 535
+
+    move_x = (x10 - x1) // 10
+    move_y = (y1 - y10) // 10
+    while (x1 <= x10):
+        clear_canvas()
+        character.draw_now(x10, y10)
+        x10 -= move_x
+        y10 += move_y
+        delay(0.01)
 
 while True:
     move1_2()
     move2_3()
     move3_4()
     move4_5()
-    #move5_6()
-    #move6_7()
-    #move7_8()
-    #move8_9()
-    #move9_10()
-    #move10_1()
+    move5_6()
+    move6_7()
+    move7_8()
+    move8_9()
+    move9_10()
+    move10_1()
