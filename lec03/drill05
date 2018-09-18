@@ -135,3 +135,5 @@ while True:
     move8_9()
     move9_10()
     move10_1()
+
+close_canvas()
