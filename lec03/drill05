@@ -41,7 +41,16 @@ def move3_4():
         delay(0.01)
 
 def move4_5():
-    pass
+    x4, y4, x5, y5 = 477, 203, 715, 136
+
+    move_x = (x5 - x4) // 10
+    move_y = (y4 - y5) // 10
+    while (x4 <= x5):
+        clear_canvas()
+        character.draw_now(x4, y4)
+        x4 += move_x
+        y4 -= move_y
+        delay(0.01)
 
 def move5_6():
     pass
@@ -65,7 +74,7 @@ while True:
     move1_2()
     move2_3()
     move3_4()
-    #move4_5()
+    move4_5()
     #move5_6()
     #move6_7()
     #move7_8()
