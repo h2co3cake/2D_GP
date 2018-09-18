@@ -1,9 +1,20 @@
 from pico2d import *
 
+open_canvas()
+
 character = load_image('character.png')
 
 def move1_2():
-    pass
+    x1, y1, x2, y2 = 203, 535, 132, 243
+
+    move_x = (x1 - x2) // 10
+    move_y = (y1 - y2) // 10
+    while (x2 <= x1):
+        clear_canvas()
+        character.draw_now(x1, y1)
+        x1 -= move_x
+        y1 -= move_y
+        delay(0.01)
 
 def move2_3():
     pass
@@ -34,12 +45,12 @@ def move10_1():
 
 while True:
     move1_2()
-    move2_3()
-    move3_4()
-    move4_5()
-    move5_6()
-    move6_7()
-    move7_8()
-    move8_9()
-    move9_10()
-    move10_1()
+    #move2_3()
+    #move3_4()
+    #move4_5()
+    #move5_6()
+    #move6_7()
+    #move7_8()
+    #move8_9()
+    #move9_10()
+    #move10_1()
