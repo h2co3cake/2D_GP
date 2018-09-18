@@ -1,0 +1,45 @@
+from pico2d import *
+
+character = load_image('character.png')
+
+def move1_2():
+    pass
+
+def move2_3():
+    pass
+
+def move3_4():
+    pass
+
+def move4_5():
+    pass
+
+def move5_6():
+    pass
+
+def move6_7():
+    pass
+
+def move7_8():
+    pass
+
+def move8_9():
+    pass
+
+def move9_10():
+    pass
+
+def move10_1():
+    pass
+
+while True:
+    move1_2()
+    move2_3()
+    move3_4()
+    move4_5()
+    move5_6()
+    move6_7()
+    move7_8()
+    move8_9()
+    move9_10()
+    move10_1()
